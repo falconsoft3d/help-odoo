@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Stop old instances
+docker rm -f postgres
+docker rm -f odoo
+docker rm -f aeroo_docs
+docker rm -f nginx
+
+# run postgres
+docker run -d --name="postgres" \
+--restart="always" \
+-p 5432:5432 \
+  -v /opt/database:/var/lib/postgresql/data \
+  -v /var/log/postgresql:/var/log/postgresql postgres:9.4
+
+# run aeroo
+docker run -d --name="aeroo_docs" \
+--restart="always" \
+bmya/aeroo-docs
+
+# run odoo
+docker run -d --name="odoo" \
+--restart="always" \
+-v /opt/odoo/extra-addons:/mnt/extra-addons \
+-v /opt/odoo/conf:/etc/odoo \
+--link postgres:db \
+--link aeroo_docs:aeroo \
+-t bmya/odoo-bmya:latest
+
+
+docker run -d --name="nginx" \
+--restart="always" \
+--link odoo:odoo \
+-v /opt/nginx:/etc/nginx/conf.d \
+-p 80:80 nginx
+
+# echo "Lapso 10 segundos. Por favor espere...."
+# sleep 10
+
+# docker restart nginx
+
+docker ps
+
+docker attach odoo
