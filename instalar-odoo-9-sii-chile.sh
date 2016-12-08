@@ -1,14 +1,15 @@
-## Cambiamos el PassWord a Root
+## Cambiamos el PassWord a Root ###
+sudo passwd root
 
-## Instalamos Odoo
+## Instalamos Odoo ###
 wget -O - https://nightly.odoo.com/odoo.key | apt-key add -
 echo "deb http://nightly.odoo.com/9.0/nightly/deb/ ./" >> /etc/apt/sources.list
 apt-get update && apt-get install odoo
 
-## Instalamos git
+## Instalamos git ###
 sudo apt install git
 
-# nos colocamos sobre la carpeta de modulos
+# nos colocamos sobre la carpeta de modulos ###
 cd /usr/lib/python2.7/dist-packages/openerp/addons
 
 ## Instalamos el primer modulo 
