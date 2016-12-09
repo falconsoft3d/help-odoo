@@ -49,10 +49,6 @@ pip install dicttoxml
 pip install elaphe
 
 
-# Instalamos bibliotecas ----- NO
-apt install swig python-dev python-cffi libxml2-dev libxslt1-dev libssl-dev python-lxml python-cryptography python-openssl python-certifi python-defusedxml
-
-
 ## Instalamos bibliotecas ##
 apt install swig python-dev python-cffi libxml2-dev libxslt1-dev libssl-dev python-lxml python-openssl  python-defusedxml
 
