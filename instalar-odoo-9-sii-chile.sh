@@ -9,39 +9,45 @@ apt-get update && apt-get install odoo
 ## Instalamos git ###
 sudo apt install git
 
-# nos colocamos sobre la carpeta de modulos ###
+## Instalamos la libreria de PDF ##
+sudo apt-get update
+sudo apt-get install wkhtmltopdf
+
+## nos colocamos sobre la carpeta de modulos ###
 cd /usr/lib/python2.7/dist-packages/openerp/addons
 
-## Instalamos el primer modulo 
+## Instalamos el primer modulo ##
 git clone -b 9.0 https://github.com/dansanti/l10n_cl_vat
 sudo service odoo restart
 
-## Instalamos modulo
+## Instalamos modulo ##
 git clone -b 9.0 https://github.com/dansanti/base_state_ubication
 sudo service odoo restart
 
-## Instalamos modulo
+## Instalamos modulo ##
 git clone -b 9.0 https://github.com/dansanti/l10n_cl_counties
 sudo service odoo restart
 
-## Instalamos modulo
+## Instalamos modulo ##
 git clone -b 9.0 https://github.com/dansanti/l10n_cl_base_rut
 sudo service odoo restart
 
-## Instalamos modulo
+## Instalamos modulo ##
 git clone -b 9.0 https://github.com/dansanti/l10n_cl_partner_activities
 sudo service odoo restart
 
-## instalamos el gestor de paquete de phyton PIP
+## instalamos el gestor de paquete de phyton PIP ##
 sudo apt-get install python-pip python-dev build-essential 
 sudo pip install --upgrade pip 
 sudo pip install --upgrade virtualenv 
 
 
-# pip 
+## pip ##
 pip install xmltodict
 pip install dicttoxml
 pip install elaphe
+
+# pip no
 pip install pysftp
 
 
