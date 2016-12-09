@@ -109,3 +109,10 @@ git clone -b 9.0 https://github.com/dansanti/l10n_cl_libro_compra_venta
 sudo service odoo restart
 # rm -Rf l10n_cl_libro_compra_venta
 
+
+# ver los procesos de log 
+cd /var/log/odoo
+nano odoo-server.log
+
+# si lo quiero limpiar 
+rm odoo-server.log
