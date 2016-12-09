@@ -63,7 +63,7 @@ pip install cryptography
 pip install pysftp
 
 
-# Instalamos modulo
+## Instalamos modulo ##
 git clone -b 9.0 https://github.com/falconsoft3d/webservices_generic
 sudo service odoo restart
 
@@ -86,8 +86,6 @@ pip install signxml
 ## Instalamos modulo ##
 git clone -b 9.0 https://github.com/dansanti/global_discount
 sudo service odoo restart
-
-
 
 ## Instalamos modulo ##
 git clone -b 9.0 https://github.com/dansanti/user_signature_key
