@@ -116,3 +116,14 @@ nano odoo-server.log
 
 # si lo quiero limpiar 
 rm odoo-server.log
+
+# Instalamos el nginx
+sudo apt-get install nginx
+
+# comfiguramos el archivo default que debe estar en:
+# /etc/nginx/sites-available  o /usr/local/nginx/conf, /etc/nginx, or /usr/local/etc/nginx.
+# usamos el siguiente fichero: https://github.com/falconsoft3d/ngix-odoo/blob/master/default
+# reiniciamos el nginx
+nginx -s reload
+
+
