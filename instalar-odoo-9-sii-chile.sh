@@ -94,17 +94,16 @@ git clone -b 9.0 https://github.com/dansanti/user_signature_key
 sudo service odoo restart
 # rm -Rf user_signature_key - Si tienes un error borra la carpeta.
 
-
-# Instalamos modulo
+## Instalamos modulo ##
 git clone -b 9.0 https://github.com/dansanti/l10n_cl_dte
+sudo service odoo restart
+
+## Instalamos modulo ##
+git clone -b 9.0 https://github.com/dansanti/l10n_cl_stock_picking
 sudo service odoo restart
 
 # Instalamos modulo
 git clone -b 9.0 https://github.com/dansanti/l10n_cl_libro_compra_venta
 sudo service odoo restart
-
-
-# Instalamos modulo
-git clone -b 9.0 https://github.com/dansanti/l10n_cl_stock_picking
-sudo service odoo restart
+# rm -Rf l10n_cl_libro_compra_venta
 
