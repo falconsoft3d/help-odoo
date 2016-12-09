@@ -62,6 +62,9 @@ pip install cryptography
 ## pip
 pip install pysftp
 
+## Instalamos modulo
+git clone https://github.com/falconsoft3d/report_xlsx
+sudo service odoo restart
 
 ## Instalamos modulo ##
 git clone -b 9.0 https://github.com/falconsoft3d/webservices_generic
@@ -100,7 +103,12 @@ sudo service odoo restart
 git clone -b 9.0 https://github.com/dansanti/l10n_cl_stock_picking
 sudo service odoo restart
 
-# Instalamos modulo
+## Instalamos modulo ##
+pip install signxml==1.0.1
+pip install xlsxwriter
+
+
+## Instalamos modulo
 git clone -b 9.0 https://github.com/dansanti/l10n_cl_libro_compra_venta
 sudo service odoo restart
 # rm -Rf l10n_cl_libro_compra_venta
