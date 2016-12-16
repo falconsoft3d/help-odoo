@@ -127,3 +127,13 @@ sudo apt-get install nginx
 nginx -s reload
 
 
+
+
+
+# Configuraciones en Odoo despues de instalado
+1- El impuesto debe ser global
+2- La precisión decimal de la moneda CLP debe ser 0
+3- El código de iva debe ser 14 para compras
+4- Las facturas de compras siempre debes marca las como no recuperable
+
+
