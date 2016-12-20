@@ -11,7 +11,7 @@ sudo apt install git
 
 ## Instalamos la libreria de PDF ##
 sudo apt-get update
-sudo apt-get install wkhtmltopdf
+# sudo apt-get install wkhtmltopdf
 
 ## nos colocamos sobre la carpeta de modulos ###
 cd /usr/lib/python2.7/dist-packages/openerp/addons
@@ -47,16 +47,17 @@ sudo pip install --upgrade virtualenv
 pip install xmltodict
 pip install dicttoxml
 pip install elaphe
-
+pip install M2Crypto
+pip install cchardet
+pip install SOAPpy
+# pip install signxml
+pip install cryptography
+pip install pysftp
+pip install signxml==1.0.1
+pip install xlsxwriter
 
 ## Instalamos bibliotecas ##
 apt install swig python-dev python-cffi libxml2-dev libxslt1-dev libssl-dev python-lxml python-openssl  python-defusedxml
-
-## Instalamos bibliotecas ##
-pip install cryptography
-
-## pip
-pip install pysftp
 
 ## Instalamos modulo
 git clone https://github.com/falconsoft3d/report_xlsx
@@ -74,12 +75,6 @@ sudo service odoo restart
 ## Instalamos modulo ##
 git clone -b 9.0 https://github.com/dansanti/l10n_cl_dte_caf
 sudo service odoo restart
-
-## Modulos Python ##
-pip install M2Crypto
-pip install cchardet
-pip install SOAPpy
-pip install signxml
 
 
 ## Instalamos modulo ##
@@ -99,9 +94,7 @@ sudo service odoo restart
 git clone -b 9.0 https://github.com/dansanti/l10n_cl_stock_picking
 sudo service odoo restart
 
-## Instalamos modulo ##
-pip install signxml==1.0.1
-pip install xlsxwriter
+
 
 
 ## Instalamos modulo
