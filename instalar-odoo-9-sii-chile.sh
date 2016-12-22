@@ -117,8 +117,10 @@ sudo apt-get install nginx
 # reiniciamos el nginx
 nginx -s reload
 
+pip install requests==2.6.0
 
-
+wget http://download.gna.org/wkhtmltopdf/0.12/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb
+sudo dpkg -i wkhtmltox-0.12.1_linux-trusty-amd64.debz
 
 
 # Configuraciones en Odoo despues de instalado
