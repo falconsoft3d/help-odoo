@@ -130,3 +130,6 @@ sudo dpkg -i wkhtmltox-0.12.1_linux-trusty-amd64.debz
 4- Las facturas de compras siempre debes marca las como no recuperable
 
 
+http://globalresponse.cl/blog/nuestro-blog-1/post/instalacion-facturacion-electronica-4
+
+
