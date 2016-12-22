@@ -133,3 +133,25 @@ sudo dpkg -i wkhtmltox-0.12.1_linux-trusty-amd64.debz
 http://globalresponse.cl/blog/nuestro-blog-1/post/instalacion-facturacion-electronica-4
 
 
+
+# Remplazar logo en tienda
+<img t-att-src="'data:image/png;base64,%s' % res_company.logo" class="img img-responsive" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+
+addons_path = /usr/lib/python2.7/dist-packages/openerp/addons, /var/lib/odoo/.local/share/Odoo/addons/9.0
+
+# permiso de escritura 
+chmod 777 -R  /var/lib/odoo/
+
+#
+/usr/lib/python2.7/dist-packages
+/openerp/addons
+
+#
+/var/lib/odoo/.local
+/share/Odoo/addons/9.0
+
+#
+
+
+
+
