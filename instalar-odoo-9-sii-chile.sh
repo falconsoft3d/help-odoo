@@ -100,6 +100,9 @@ git clone -b 9.0 https://github.com/dansanti/l10n_cl_libro_compra_venta
 sudo service odoo restart
 # rm -Rf l10n_cl_libro_compra_venta
 
+## Instalamos modulo de Odoo Indexation
+Attachments List and Document Indexation
+
 
 # ver los procesos de log 
 cd /var/log/odoo
