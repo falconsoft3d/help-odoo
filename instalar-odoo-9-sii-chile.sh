@@ -153,7 +153,8 @@ chmod 777 -R  /var/lib/odoo/
 /var/lib/odoo/.local
 /share/Odoo/addons/9.0
 
-#
+# Abrir como root una carpeta
+nautilus
 
 
 
