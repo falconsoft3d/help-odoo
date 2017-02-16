@@ -33,3 +33,4 @@ docker run -d --restart="always" --name odoo \
 
 8] Variantes de Docker
 nelsonramirezs/odoo9:latest
+nelsonramirezs/odoo-konos:latest
