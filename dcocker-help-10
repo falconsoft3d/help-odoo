@@ -1,0 +1,31 @@
+# Instación en Odoo 10
+1] Instalamos el Docker
+sudo wget -qO- https://get.docker.com/ | sh
+
+2] Agregar el usuario actual al grupo docker y de esta manera no es necesario usar sudo
+sudo gpasswd -a ${USER} docker
+
+3] Reiniciamos el Docker
+sudo service docker restart
+
+4] Reiniciamos el servidor de Linux para que el usuario entre en el grupo del Docker
+sudo reboot
+
+5] Correr un contenedor docker con postgres a partir de la imágen oficial.
+docker run -d --restart="always" --name="postgres" \
+-v /opt/database:/var/lib/postgresql/data \
+-v /var/log/postgresql:/var/log/postgresql postgres:9.4
+En caso que además desees que el contenedor se reinicie al reiniciar el equipo, deberás incluir --restart="always" como una de las opciones del comando. (válido para todos los contenedores).
+
+6] Conectarse al contenedor postgres y crear un usuario "odoo" en la imagen de postgres
+Esto debe ser hecho por única vez:
+docker exec -ti postgres sh -c 'exec psql -U postgres'
+CREATE USER odoo WITH PASSWORD 'odoo';
+ALTER USER odoo WITH SUPERUSER;
+\q
+
+7] Correr un contenedor de Odoo conectando postgres:
+docker run -d --restart="always" --name odoo \
+-v /opt/odoo/extra-addons:/mnt/extra-addons \
+-p 8069:8069 \
+--link postgres:db -t odoo:10
