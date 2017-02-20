@@ -1,11 +1,15 @@
 # Instación en Odoo 10
 1] Instalamos el Docker
+
 <code>
 sudo wget -qO- https://get.docker.com/ | sh
 </code>
 
 2] Agregar el usuario actual al grupo docker y de esta manera no es necesario usar sudo
+
+<code>
 sudo gpasswd -a ${USER} docker
+</code>
 
 3] Reiniciamos el Docker
 sudo service docker restart
