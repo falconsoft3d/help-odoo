@@ -26,7 +26,9 @@ sudo reboot
 5] Correr un contenedor docker con postgres a partir de la imágen oficial.
 
 docker run -d --restart="always" --name="postgres" \
+
 -v /opt/database:/var/lib/postgresql/data \
+
 -v /var/log/postgresql:/var/log/postgresql postgres:9.4
 
 En caso que además desees que el contenedor se reinicie al reiniciar el equipo, deberás incluir --restart="always" como una de las opciones del comando. (válido para todos los contenedores).
