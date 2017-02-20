@@ -33,7 +33,7 @@ docker run -d --restart="always" --name odoo \
 #######################################################################################
 
 docker run -d --restart="always" --name odoo9 \
--v /opt/odoo/extra-addons9:/mnt/extra-addons9 \
+-v /opt/odoo/extra-addons9:/mnt/extra-addons \
 -p 8070:8069 \
 --link postgres:db -t odoo:9
 
