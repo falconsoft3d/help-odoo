@@ -47,7 +47,7 @@ sudo pip install --upgrade virtualenv
 pip install xmltodict
 pip install dicttoxml
 pip install elaphe
-pip install M2Crypto
+pip install ak-M2Crypto==0.24.0
 pip install cchardet
 pip install SOAPpy
 # pip install signxml
