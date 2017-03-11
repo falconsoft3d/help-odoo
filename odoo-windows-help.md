@@ -2,7 +2,7 @@
 ```
 odoo-bin scaffold nombremodulo odoo/addons
 ```
-# Instalamos Windows Server 2003 Resource Kit Tools
+# Ver el log de procesos en Windows
 Instalamos Windows Server 2003 Resource Kit Tools
 https://www.microsoft.com/en-us/download/confirmation.aspx?id=17657
 
