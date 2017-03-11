@@ -7,7 +7,9 @@ Instalamos Windows Server 2003 Resource Kit Tools
 https://www.microsoft.com/en-us/download/confirmation.aspx?id=17657
 
 Nos colocamos en la carpeta de la app
-C:\Program Files (x86)\Windows Resource Kits\Tools
+```
+cd C:\Program Files (x86)\Windows Resource Kits\Tools
+```
 
 Ejecutamos en el CMD el siguiente comando
 ```
