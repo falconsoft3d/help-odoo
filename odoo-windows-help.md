@@ -18,6 +18,7 @@ Ejecutamos en el CMD el siguiente comando
 tail.exe -f "C:\Program Files (x86)\Odoo 9.0-20160521\server\openerp-server.log"
 ```
 
+# Agregar carpeta con directorio
 Abrimos el fichero odoo.conf y lo editamos para adicionarle en la línea addons_path la carpeta con nuestros módulos
 C:\Program Files (x86)\Odoo 10.0\server\odoo.conf
 ```
