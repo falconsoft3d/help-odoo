@@ -1,5 +1,7 @@
 # Como crear un módulo
+Nos colocamos en la carpeta server y ejecutamos el comando scaffold
 ```
+cd C:\Program Files (x86)\Odoo 10.0\server
 odoo-bin scaffold nombremodulo odoo/addons
 ```
 # Ver el log de procesos en Windows
