@@ -15,7 +15,7 @@ cd C:\Program Files (x86)\Windows Resource Kits\Tools
 
 Ejecutamos en el CMD el siguiente comando
 ```
-tail.exe -f "C:\Program Files (x86)\Odoo 9.0-20160521\server\openerp-server.log"
+tail.exe -f "C:\Program Files (x86)\Odoo 10.0\server\odoo.log"
 ```
 
 # Agregar carpeta con directorio
