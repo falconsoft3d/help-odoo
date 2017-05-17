@@ -1,0 +1,5 @@
+https://platzi.com/blog/que-es-gitlab/                        
+https://github.com/odoo/docker/blob/master/10.0/Dockerfile                        
+docker build -t nombre_nuevo_docker .                        
+docker exec -ti <container-id> /bin/bash                        
+https://github.com/odoo/docker
