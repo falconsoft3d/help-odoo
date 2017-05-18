@@ -156,6 +156,9 @@ chmod 777 -R  /var/lib/odoo/
 # Abrir como root una carpeta
 nautilus
 
+#
+sudo chown -R sergio:sergio  path
+
 
 
 
